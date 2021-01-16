@@ -1,0 +1,33 @@
+/* GLOBAL SETTINGS */
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+/* BALL ANIMATION */
+
+.bouncing-ball {
+    background-color: rgb(114, 188, 230);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: ball;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes ball {
+    0% {transform: translate(0vw, 0vh);width: 130px; height: 170px;}
+    25% {transform: translate(50vw, 80vh);width: 180px; height: 120px;}
+    50% {transform: translate(90vw, 0vh);width: 130px; height: 170px;}
+    75% {transform: translate(50vw, 80vh);width: 180px; height: 120px;}
+    100% {transform: translate(0vw, 0vh);width: 130px; height: 170px;}
+}
+
+
+
