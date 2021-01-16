@@ -1,0 +1,30 @@
+/* GLOBAL SETTINGS */
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+}
+
+/* BALL ANIMATION */
+
+.bouncing-ball {
+    background-color: rgb(114, 188, 230);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation-name: ball;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball {
+    0% {transform: translate(0vw, 0vh);}
+    25% {transform: translate(90vw, 0vh);}
+    50% {transform: translate(0vw, 0vh);}
+    75% {transform: translate(0vw, 85vh);}
+    100% {transform: translate(0vw, 0vh);}
+}
+
